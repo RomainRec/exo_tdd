@@ -19,7 +19,7 @@ class UsersController < ApplicationController
       if @user.save
         log_in @user
         flash[:success] = "Welcome to the Sample App!"
-        redirect_to @user
+        redirect_to root_url
       else
         render 'new'
       end
@@ -40,7 +40,7 @@ class UsersController < ApplicationController
   private
 
     def user_params
-      params.require(:user).permit(:name, :email, :password,
+      params.require(:user).permit(:name, :email, :first_name, :password,
                                    :password_confirmation)
     end
 
@@ -51,7 +51,7 @@ class UsersController < ApplicationController
       unless logged_in?
         store_location
         flash[:danger] = "Please log in."
-        redirect_to login_url
+        redirect_to home_path
       end
     end
 

@@ -3,6 +3,11 @@ class StaticPagesController < ApplicationController
   end
 
   def help
+  	 unless logged_in?
+        store_location
+        flash[:danger] = "Please log in."
+        redirect_to home_path
+      end
   end
 
   def about
