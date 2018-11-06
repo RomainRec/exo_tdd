@@ -2,7 +2,7 @@
 
 ## Sur Slack :
 
-* Romain Recher     slack/  @Romain :whale2:
+* Romain Recher     slack/  @Romain 
 
 ## Lien vers le repo :
 
