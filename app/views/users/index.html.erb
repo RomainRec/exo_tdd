@@ -1,11 +1,11 @@
 <% provide(:title, 'All users') %>
-<h1>All users</h1>
+<h2>You're the all-singing, all-dancing crap of the world</h2>
 
 <ul class="users">
   <% @users.each do |user| %>
     <li>
       <%= link_to (gravatar_for user, size: 50), user %>
-      <%= user.first_name %> <%= user.name %>
+      <%= user.first_name %> <%= user.name %>  &nbsp;&nbsp;&nbsp;&nbsp; email : <%= user.email %>
     </li>
   <% end %>
 </ul>
