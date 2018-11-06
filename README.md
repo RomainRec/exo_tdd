@@ -1,24 +1,40 @@
-# README
+# THP Semaine 6 Jour 1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Sur Slack :
 
-Things you may want to cover:
+* Romain Recher     slack/  @Romain :whale2:
 
-* Ruby version
+## Lien vers le repo :
 
-* System dependencies
+```
+   $> git clone https://github.com/RomainRec/exo_tdd.git
+```
+              
+## Lien vers le project en production :
 
-* Configuration
+https://fightclubportugal.herokuapp.com/
 
-* Database creation
 
-* Database initialization
+## Note au/à la correcteur(rice) :
 
-* How to run the test suite
+Il y a un fail sur Heroku quand on se log. Tout est ok en local. 
+Il reste 1 fail et 3 erreurs dans les tests.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Etapes d'utilisation :
 
-* Deployment instructions
+Pour pouvoir profiter des gems, n'oublie pas un petit :
+```
+   $> bundle install
+```
 
-* ...
+Ensuite : 
+```
+   $> rails db:migrate
+```
+
+Enfin : 
+```
+   $> rails db:seed
+```
+
+Merci !!
