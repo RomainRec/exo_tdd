@@ -8,6 +8,7 @@
 
 User.create!(name:  "Example User",
              email: "example@railstutorial.org",
+             first_name: "Example",
              password:              "foobar",
              password_confirmation: "foobar")
 
@@ -17,6 +18,7 @@ User.create!(name:  "Example User",
   password = "password"
   User.create!(name:  name,
                email: email,
+               first_name: first_name,
                password:              password,
                password_confirmation: password)
 end
